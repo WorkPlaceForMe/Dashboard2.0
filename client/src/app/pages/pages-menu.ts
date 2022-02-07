@@ -2,7 +2,7 @@ import { NbMenuItem } from '@nebular/theme';
 
 export const MENU_ITEMSBRANCH: NbMenuItem[] = [
   {
-    title: 'Start',
+    title: 'Start -',
     icon: 'home-outline',
     link: '/dashboard',
     hidden: true,

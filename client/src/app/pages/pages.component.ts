@@ -34,17 +34,17 @@ export class PagesComponent {
   }
 
   constructor( public authService: AuthService, private router: Router, private service: FacesService) {
-    this.service.getDashboard().subscribe(
-      res => {
-        for(const alg of res['data']['analyticsT']){
-          if(alg.algo_id === 0){
-            this.menuClient.push(this.fr)
-            this.menuBranch.push(this.fr)
-          }
-        }
-      },
-      err => console.error(err)
-    )
+    // this.service.getDashboard().subscribe(
+    //   res => {
+    //     for(const alg of res['data']['analyticsT']){
+    //       if(alg.algo_id === 0){
+    //         this.menuClient.push(this.fr)
+    //         this.menuBranch.push(this.fr)
+    //       }
+    //     }
+    //   },
+    //   err => console.error(err)
+    // )
     if(authService.isAdmin){
       router
     }

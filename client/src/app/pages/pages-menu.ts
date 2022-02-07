@@ -1,12 +1,6 @@
 import { NbMenuItem } from '@nebular/theme';
 
 export const MENU_ITEMSBRANCH: NbMenuItem[] = [
-  // {
-  //   title: 'E-commerce',
-  //   icon: 'shopping-cart-outline',
-  //   link: '/pages/dashboard',
-  //   home: true,
-  // },
   {
     title: 'Start',
     icon: 'home-outline',
@@ -15,79 +9,81 @@ export const MENU_ITEMSBRANCH: NbMenuItem[] = [
     home:true
   },
   {
-    title: 'Features for Branch',
+    title: 'Main',
     group: true,
   },
-  {
-    title: 'Accounts',
-    icon: 'people-outline',
-    link: 'accounts'
-  },
-  // {
-  //   title: 'FR Users',
-  //   icon: 'browser-outline',
-  //   link: 'management'
-  // },
-  // {
-  //   title: 'Dashboard',
-  //   icon: 'clipboard-outline',
-  //   link: 'analytics'
-  // },
-  {
-    title: 'Cameras',
-    icon: 'video-outline',
-    children: [
-      {
-        title: 'Cameras List',
-        link: 'camerasList',
-      },
-      {
-        title: 'Add Camera',
-        link: 'cameras/add_camera',
-      },
-    ],
-  },
-  {
+    {
     title: 'Dashboards',
     icon: 'bar-chart-outline',
     link: 'graphs'
   },
+      {
+    title: 'My videos',
+    icon: 'video-outline',
+    link: 'media'
+  },
+        {
+    title: 'My analytics',
+    icon: 'radio-button-on-outline',
+    link: 'camerasList'
+  },
+  // {
+  //   title: 'Stored Videos',
+  //   icon: 'film-outline',
+  //   children: [
+  //     {
+  //       title: 'Video List',
+  //       link: 'search/list',
+  //     },
+  //     {
+  //       title: 'Add Video',
+  //       link: 'search/upload',
+  //     },
+  //     {
+  //       title: 'Forensic Search',
+  //       link: 'search/bar',
+  //     }
+  //   ],
+  // },
   {
+    title: 'Addons',
+    group: true,
+  },
+    {
+      title: 'Forensic Search',
+      link: 'search/bar',
+      icon: 'film-outline',
+    },
+    {
     title: 'Tickets',
     icon: 'done-all-outline',
     link: 'tickets'
   },
-  {
-    title: 'Stored Videos',
-    icon: 'film-outline',
-    children: [
-      {
-        title: 'Video List',
-        link: 'search/list',
-      },
-      {
-        title: 'Add Video',
-        link: 'search/upload',
-      },
-      {
-        title: 'Forensic Search',
-        link: 'search/bar',
-      }
-    ],
+    {
+    title: 'Settings',
+    group: true,
   },
+    {
+    title: 'Accounts',
+    icon: 'people-outline',
+    link: 'accounts'
+  },
+  {
+    title: 'Settings',
+    icon: 'settings-2-outline',
+    link: 'accounts'
+  },
+  {
+    title: 'Contact us',
+    group: true,
+  },
+    {
+    title: 'Feedback / Get support',
+    icon: 'email-outline',
+    link: 'accounts'
+  }
 ];
 export const MENU_ITEMSADMIN: NbMenuItem[] = [
-  // {
-  //   title: 'E-commerce',
-  //   icon: 'shopping-cart-outline',
-  //   link: '/pages/dashboard',
-  //   home: true,
-  // },
-  // {
-  //   title: 'IoT Dashboard',
-  //   icon: 'home-outline',
-  //   link: '/pages/iot-dashboard',
-  // },
   {
     title: 'Start',
     icon: 'home-outline',
@@ -186,9 +182,4 @@ export const MENU_ITEMSUSER: NbMenuItem[] = [
     icon: 'done-all-outline',
     link: 'tickets'
   },
-  // {
-  //   title: 'Controls',
-  //   icon: 'power-outline',
-  //   link: 'settings'
-  // }
 ];

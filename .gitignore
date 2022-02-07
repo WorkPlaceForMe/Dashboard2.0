@@ -19,3 +19,5 @@ config.env
 configDocker.env
 runDocker.sh
 node_modules
+jsconfig.json
+nginx.conf

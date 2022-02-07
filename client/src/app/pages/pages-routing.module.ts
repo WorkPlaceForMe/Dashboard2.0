@@ -25,9 +25,10 @@ import { OtherGuard } from '../guard/other.guard';
 import { TicketComponent } from './online/ticket/ticket.component';
 import { CenterComponent } from './online/graphs/center/center.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { MediaComponent } from './cameras_conf/media/media.component';
 
 const routes: Routes = [
-    {
+{
   path: '',
   component: PagesComponent,
     children: [
@@ -102,6 +103,11 @@ const routes: Routes = [
   canActivate: [OtherGuard]
 },
 {
+  path: 'media',
+  component: MediaComponent,
+  canActivate: [OtherGuard]
+},
+{
 path: 'camerasList',
 component: LivestreamComponent,
 canActivate: [AuthGuard]
@@ -135,6 +141,11 @@ canActivate: [AuthGuard]
   path: 'search',
   loadChildren: () => import('./search/search.module')
     .then(m => m.SearchModule),
+},
+{
+  path: 'main',
+  loadChildren: () => import('./main/main.module')
+    .then(m => m.MainModule),
 },
 { path: '', 
 redirectTo: 'sign-in',

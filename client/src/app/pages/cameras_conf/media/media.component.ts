@@ -55,7 +55,7 @@ export class MediaComponent implements OnInit {
         deleteButtonContent: '<i class="nb-trash"></i>',
         confirmDelete: true,
       },
-      noDataMessage: "No media found, you can add a new video with the 'add' buttom",
+      noDataMessage: "No videos found. You can add new videos (CCTV or files) pressing the 'add new video' button",
       columns: {
         name: {
           title: 'Name',

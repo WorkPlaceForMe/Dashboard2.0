@@ -1,0 +1,143 @@
+body {
+    box-sizing: border-box;
+    background-color: #f7f4f4;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: rgb(254, 254, 254);
+    text-decoration: none;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    border: 1px dashed peru;
+}
+
+.nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #545454;
+    height: auto;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.nav-item {
+    margin: 16px 0;
+}
+
+.nav-menu.active {
+    left: 0;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    color: rgb(168, 250, 169);
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.span-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs {
+    flex-grow: 2;
+    border: 1px dashed wheat;
+    display: flex;
+}
+
+.tabs-item {
+    padding: 8px 0;
+}
+
+.tabs-link {
+    font-family: 'Roboto', sans-serif;
+}
+
+.span-bottom {
+    padding: 0 50px;
+    border: 1px dashed greenyellow;
+}
+
+.container {
+    display: grid; 
+
+    grid-template-rows: 1fr 4fr 1fr 1fr;
+    grid-template-columns: 16rem auto 1fr 2fr 1fr;
+   
+    gap: 1px;
+    height: 100vh;
+}
+
+#header {
+    background-color: #545454; 
+    grid-row-start: 1;
+    grid-column-start: 2;
+
+    grid-row-end: 2;
+    grid-column-end: 6;
+}
+
+#main-content {
+    background-color: #545454; 
+    grid-row-start: 2;
+    grid-column-start: 2;
+
+    grid-row-end: 5;
+    grid-column-end: 5;
+}
+
+
+#left-sidebar {
+    background-color: #545454; 
+    grid-row-start: 1;
+    grid-column-start: 1;
+
+    grid-row-end: 5;
+    grid-column-end: 2;
+}
+
+#right-sidebar {
+    background-color: #545454; 
+    grid-row-start: 2;
+    grid-column-start: 5;
+
+    grid-row-end: 5;
+    grid-column-end: 6;
+}
